@@ -65,5 +65,7 @@ export default {
 
 
 <style scoped>
-
+div{
+  color: aqua;
+}
 </style>
