@@ -81,7 +81,10 @@ dl{
 .project_card{
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  border-radius: 10em;
+  -webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;	
+	-moz-border-radius: 20px;
+	border-radius: 20px;
   margin: 1em;
   padding: 0.5em;
   width: 70vw;
@@ -90,7 +93,10 @@ dl{
 }
 
 .project_card button{
-  border-radius: 3em;
+  -webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;	
+	-moz-border-radius: 20px;
+	border-radius: 20px;
   border: none;
   background-color: #e66aa1;
 }
@@ -121,7 +127,10 @@ dl{
   height: 50em;
   text-align: center;
   background-color: #568080;
-  border-radius: 2em;
+  -webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;	
+	-moz-border-radius: 20px;
+	border-radius: 20px;
   display: grid;
   grid-template-rows: 5% 60% 10% 20% 5%;
   color: #181D23;
@@ -163,5 +172,89 @@ dl{
   font-size: 1.4em;
   margin: 0;
   padding: 0.5em;;
+}
+
+
+@media screen and (max-width: 800px){
+
+#wrapper{
+  margin: 0;
+}
+  .project_card{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: auto;
+  margin-bottom: 5vw;
+  -webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;	
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+  width: 80vw;
+  height: 100%;
+  box-shadow: 0em 0em 2em black;
+  color: #bcdfee;
+}
+
+.project_card button{
+  position: absolute;
+  width: 80vw;
+  height: 10vw;
+  background: none;
+  text-indent: -9999px;
+}
+.project_card button:hover{
+  background: none;
+}
+
+.project_card h4{
+  margin: auto;
+  font-size: 4vw;
+}
+.project_card p{
+  display: flex;
+  justify-content: start;
+  color: #a14e58;
+  font-size: 3vw;
+}
+
+.modal{
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 85vh;
+  text-align: center;
+  background-color: #568080;
+  -webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;	
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+  display: grid;
+  grid-template-rows: 10vw 50vw 10vw;
+  color: #181D23;
+}
+
+.modal h1{
+  font-size: 6vw;
+}
+
+#description{
+  font-size: 4vw;
+  margin: 0;
+  padding: 0.5em;;
+}
+
+.modal button{
+  font-size: 5vw;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  padding: 1.4vw;
+  justify-content: baseline;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: #a14e58;
+}
+
 }
 </style>

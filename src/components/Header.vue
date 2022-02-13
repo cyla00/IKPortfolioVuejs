@@ -4,9 +4,18 @@
       <a href="/"><img src="../../public/icon.png" alt=""></a>
     </div>
     <div id="menu_link">
-      <a href="/">About</a>
-      <a href="/projects">Projects</a>
-      <a href="/contact">Contact</a>
+      <div class="btn">
+        <a href="/">About</a>
+      </div>
+      
+      <div class="btn">
+        <a href="/projects">Projects</a>
+      </div>
+      
+      <div class="btn">
+        <a href="/contact">Contact</a>
+      </div>
+      
     </div>
   </header>
 </template>
@@ -36,9 +45,14 @@ header{
   top: 0;
   right: 0;
 }
-#menu_link a{
+.btn{
   margin-right: 5%;
+}
+#menu_link a{
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   color: #e66aa1;
   font-size: 1.5em;
 }
@@ -57,5 +71,27 @@ header{
 }
 #logo img{
   width: 5em;
+}
+
+
+
+@media screen and (max-width: 800px){
+
+  header{
+  padding: 4vw;
+  font-size: 3vw;
+}
+
+
+  #logo img{
+  width: 10vw;
+}
+
+.btn{
+  margin-right: 4vw;
+}
+
+
+
 }
 </style>

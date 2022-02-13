@@ -37,4 +37,10 @@ body{
   display: grid;
   grid-auto-rows: 100px 1fr 60px;
 }
+
+@media screen and (max-width: 800px){
+  #app{
+    grid-auto-rows: 15vw 1fr;
+  }
+}
 </style>

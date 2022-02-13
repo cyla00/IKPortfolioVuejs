@@ -36,4 +36,18 @@ footer{
 #year{
   color: #bcdfee;
 }
+
+
+@media screen and (max-width: 800px){
+  footer{
+  width: 100%;
+  font-size: 2.5vw;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  margin: auto;
+  color: #326c73;
+}
+
+}
 </style>

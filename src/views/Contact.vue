@@ -12,6 +12,8 @@
 
         <input id="submit" type="submit" value="Send!" v-on:click="sendEmail()">
       </div>
+      <p id="github">check out my GitHub profile!</p>
+      <a href="https://github.com/cyla00" id="logo"><img src="../assets/git.png" alt="github-logo"></a>
     </div>
   </div>
 </template>
@@ -92,7 +94,7 @@ p{
 #wrapper{
   display: flex;
   flex-direction: column;
-  width: 50vw;
+  width: 45em;
   margin: auto;
 }
 input{
@@ -130,6 +132,40 @@ input{
 label{
   font-size: 1.4em;
   color: #bcdfee;
+}
+#github{
+  font-size: 1em;
+  margin: auto;
+}
+img{
+  width: 3em;
+  margin: 1em;
+}
+
+
+@media screen and (max-width: 800px){
+  p{
+  font-size: 4vw;
+}
+
+  #wrapper{
+  width: 90vw;
+  overflow: none;
+}
+
+input{
+  font-size: 3.2vw;
+}
+
+label{
+  font-size: 4vw;
+}
+
+#github{
+  font-size: 1evw;
+  margin-top: 20px;
+}
+
 }
 
 </style>
