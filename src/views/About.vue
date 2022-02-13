@@ -137,4 +137,50 @@ h2{
   color: black;
   background-color: rgba(123, 181, 181, 0.6);
 }
+
+
+@media screen and (max-width: 800px){
+
+#home_wrapper{
+  text-align: center;
+}
+
+
+#title{
+    font-size: 10vw;
+  }
+
+#subtitle{
+  font-size: 4vw;
+}
+
+#description{
+  font-size: 4vw;
+}
+
+#check a{
+  font-size: 6vw;
+}
+
+#tech-stack{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#intro{
+  margin: 1vw;
+  margin-bottom: 15vw;
+}
+
+.tech{
+  text-align: center;
+  margin: 0;
+}
+
+.tech img{
+  width: 6vw;
+  height: 6vw;
+}
+
+}
 </style>

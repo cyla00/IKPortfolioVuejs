@@ -165,13 +165,13 @@ dl{
   margin: 1em;
 }
 .modal h1{
-  font-size: 4em;
+  font-size: 3em;
   margin: 0;
 }
 #description{
   font-size: 1.4em;
   margin: 0;
-  padding: 0.5em;;
+  padding: 0.5em;
 }
 
 
