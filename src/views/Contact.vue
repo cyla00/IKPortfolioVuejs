@@ -43,7 +43,7 @@ export default {
       }
 
       if(this.name && validateEmail(this.email) && this.subject && this.content){
-        axios.post('http://localhost:3000/contactme', {
+        axios.post('api/contactme', {
           name: Buffer.from(this.name).toString('base64'),
           email: Buffer.from(this.email).toString('base64'),
           subject: Buffer.from(this.subject).toString('base64'),

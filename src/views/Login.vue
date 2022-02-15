@@ -28,7 +28,7 @@ export default {
     var submit = document.querySelector('#input')
 
     submit.addEventListener('click', () => {
-      axios.post('http://localhost:3000/login', null, {
+      axios.post('api/login', null, {
         auth: {
           username: this.email, 
           password: SHA256(this.password),

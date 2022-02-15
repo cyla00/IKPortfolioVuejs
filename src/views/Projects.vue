@@ -53,7 +53,7 @@ export default {
     }
   },
   mounted(){
-    axios.get('http://localhost:3000/api/projects')
+    axios.get('api/projects')
     .then((data) => {
       if(data.data.lenght == 0){this.projects = false}
       this.projects = data.data

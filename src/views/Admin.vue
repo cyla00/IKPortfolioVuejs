@@ -50,7 +50,7 @@ export default {
         confirmButtonColor: 'red',
       }).then((result) => {
         if (result.isConfirmed) {
-          axios.post('http://localhost:3000/admin/remove', {
+          axios.post('api/admin/remove', {
             data: {
               id: project._id,
               check_id: localStorage.getItem('usr_id')
@@ -82,7 +82,7 @@ export default {
     }
   },
   mounted(){
-    axios.get('http://localhost:3000/api/projects')
+    axios.get('api/projects')
     .then((data) => {
       this.projects=data.data
       })
@@ -101,7 +101,7 @@ export default {
 
     add_project.addEventListener('click', () => {
       if(this.title && this.description && isValidUrl(this.link)){
-        axios.post('http://localhost:3000/admin/add', {
+        axios.post('api/admin/add', {
           data: {
             title: this.title,
             description: this.description,
