@@ -53,6 +53,11 @@
         <img src="../assets/sql.png" alt="sql">
         <h3>SQL</h3>
       </div>
+
+      <div class="tech">
+        <img src="https://www.rust-lang.org/logos/rust-logo-512x512-blk.png" alt="sql">
+        <h3>Rust</h3>
+      </div>
     </div>
   </div>
 
