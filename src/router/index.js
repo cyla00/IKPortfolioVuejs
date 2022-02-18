@@ -5,7 +5,6 @@ import Projects from '../views/Projects.vue'
 import Contact from '../views/Contact.vue'
 import Admin from '../views/Admin.vue'
 import Login from '../views/Login'
-import { nextTick } from 'vue'
 
 const routes = [
   {
@@ -54,6 +53,7 @@ const routes = [
 ]
 
 const router = createRouter({
+  mode: 'history',
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
