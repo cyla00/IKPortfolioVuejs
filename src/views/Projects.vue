@@ -154,14 +154,18 @@ dl{
   background-repeat: no-repeat;
   background-size: fill;
   background-position: center;
-  -webkit-box-shadow: 0 0 20px #e66aa1;
-  box-shadow: 0 0 20px #e66aa1;
-}
+  -webkit-box-shadow: 0 0 100px black;
+  box-shadow: 0 0 100px black;
+  }
 
 #image-wrapper{
   background-color: black;
   display: flex;
   justify-content: center;
+  background-image: url('../assets/blackback.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .modal div{
   overflow: hidden;
