@@ -12,7 +12,7 @@
 
   <div class="modal" v-if="modalState">
     <p id="date">date: {{modalDate}}</p>
-    <div>
+    <div id="image-wrapper">
       <img v-bind:src="modalImage" alt="project_image">
     </div>
     <h1>{{modalTitle}}</h1>
@@ -151,10 +151,17 @@ dl{
   transition: 0.2s;
 }
 .modal img{
-  width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fill;
   background-position: center;
+  -webkit-box-shadow: 0 0 20px #e66aa1;
+  box-shadow: 0 0 20px #e66aa1;
+}
+
+#image-wrapper{
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 .modal div{
   overflow: hidden;
